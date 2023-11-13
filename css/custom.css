@@ -1,0 +1,76 @@
+/* Build out your custom CSS here */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display&family=Red+Hat+Display&display=swap');
+
+/*The globe mail*/
+main section:nth-child(3) h2 {
+    font-family: 'DM Serif Display', Arial, Helvetica, serif;
+    background-color: #db281e;
+    color: #fff;
+    text-align: center;
+    font-size: 3em;
+    width: 480px;
+  
+}
+
+section:nth-of-type(2) h2::after {
+    content: ""; /*create an empty string for the img to be insterted into*/
+    background-image: url('/images/the-globe-and-mail-leaf.png'); 
+    display:inline-block;
+    height: 50px;
+    width: 50px; 
+    margin-left: 10px;
+    position: absolute;  /*  Position the pseudo-element absolutely inside of the h2 */
+}
+/*National post*/
+main section:nth-child(4) h2 {
+    font-family: 'Playfair Display', Arial, Helvetica, serif;
+    background-color: #fad11c;
+    text-align: center;
+    font-size: 3.9em;
+    width: 500px;
+    height: 80px;
+  
+  
+}
+section:nth-of-type(3) h2::before{
+    content: ""; /*create an empty string for the img to be insterted into*/
+    background-image: url('/images/national-post-logo-leaf.png'); 
+    display:inline-block;
+    height: 50px;
+    width: 50px;
+    left: 300px;
+    position: absolute; 
+}
+/*The star.com*/
+main section:nth-child(5) h2 {
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    background-color: #0065a4;
+    color: #63ccf5;
+    text-align: center;
+    font-size: 3.9em;
+    width: 400px;
+    height: 80px;
+    margin-left: 80px;
+    
+}
+em{
+    color: #fff;
+}
+section:nth-of-type(4) h2::before{
+    content: ""; /*create an empty string for the img to be insterted into*/
+    background-image: url('/images/the-star-bg-left.png'); 
+    display:inline-block;
+    height: 80px;
+    width: 50px;
+    position: absolute; 
+    left: 40px;
+}
+section:nth-of-type(4) h2::after{
+    content: ""; /*create an empty string for the img to be insterted into*/
+    background-image: url('/images/the-star-bg-right.png'); 
+    display:inline-block;
+    height: 80px;
+    width: 50px;
+    position: absolute; 
+   left: 480px;
+}
